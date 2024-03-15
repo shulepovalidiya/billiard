@@ -55,7 +55,6 @@ const Game: React.FC = () => {
 
                             if (distance < ball.radius + otherBall.radius) {
                                 // Расчет новых скоростей после столкновения
-                                const angle = Math.atan2(dy, dx);
                                 const vx1 = ball.dx;
                                 const vy1 = ball.dy;
                                 const vx2 = otherBall.dx;
