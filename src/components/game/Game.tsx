@@ -15,7 +15,7 @@ const Game: React.FC = () => {
     const [showModal, setShowModal] = useState(false);
     const [selectedBallIndex, setSelectedBallIndex] = useState(-1);
 
-    const [balls, setBalls] = useState([
+    const [balls, setBalls] = useState<Ball[]>([
         { x: 100, y: 200, radius: 20, color: "red", dx: 0, dy: 0 },
         { x: 300, y: 100, radius: 30, color: "blue", dx: 0, dy: 0 },
         { x: 500, y: 300, radius: 25, color: "green", dx: 0, dy: 0 },
@@ -55,7 +55,6 @@ const Game: React.FC = () => {
 
                             if (distance < ball.radius + otherBall.radius) {
                                 // Расчет новых скоростей после столкновения
-                                const angle = Math.atan2(dy, dx);
                                 const vx1 = ball.dx;
                                 const vy1 = ball.dy;
                                 const vx2 = otherBall.dx;
