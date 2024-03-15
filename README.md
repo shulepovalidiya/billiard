@@ -19,4 +19,4 @@ Canvas, TypeScript, React
 
 ## GitHub Pages
 
-Проект доступен на GitHub Pages — 
+Проект доступен на GitHub Pages — [https://shulepovalidiya.github.io/billiard/](https://shulepovalidiya.github.io/billiard/)
